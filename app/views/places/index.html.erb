@@ -1,8 +1,14 @@
+
+<div class="page_number col-xs-offset-1">
+<%= paginate @places %>
+</div>
+<br/>
+
 <% @places.each do |place| %>
 
 	<div class="booyah-box col-xs-10 col-xs-offset-1">
 		<h1><%= place.name %></h1>
-		<i><%= place.address %></i><br/><br/>
+		<i><%= place.address %></i><br/><br/>crossword.png
 		<p><%= place.description %></p><br/>
 	</div>
 
