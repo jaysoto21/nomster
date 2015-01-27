@@ -27,6 +27,12 @@
 			</div>
 		<% end %>
 
+		<% if place.photos.present? %>
+			<div>
+				<%= image_tag place.photos.last.picture, :class=>'col-xs-12' %>	
+			</div>
+		<% end %>
+		
 	</div>
 
 <% end %>
