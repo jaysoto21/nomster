@@ -1,6 +1,13 @@
-<h1>User Show Page</h1>
+<div class="booyah-box">
+	<div class="col-xs-4">
+		<%= image_tag 'user.png' %>
+	</div>
 
-<h1><%= @user.email %></h1>
-<h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
-<h4>Total Comments: <%= @user.comments.count %></h4>
-<h4>5 Star reviews: <%= @user.comments.where(:rating => '5_stars').count %></h4>
+	<div class="col-xs-8">
+		<h1><%= @user.email %></h1>
+		<h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+		<h4>Total Comments: <%= @user.comments.count %></h4>
+		<h4>5 Star reviews: <%= @user.comments.where(:rating => '5_stars').count %></h4>
+	</div>
+	<div class="clear"></div>
+</div>
