@@ -17,6 +17,7 @@ gem "geocoder"
 gem "figaro", ">= 1.0.0"
 gem 'carrierwave'
 gem "fog", "~> 1.3.1"
+gem "factory_girl_rails", "~> 4.0"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
